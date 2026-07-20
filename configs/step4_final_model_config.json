@@ -1,0 +1,53 @@
+{
+    "random_seed": 42,
+    "target_column": "fraud_bool",
+    "time_column": "month",
+    "primary_dataset": "Base.csv",
+    "robustness_dataset": "Variant II.csv",
+    "training_months": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "validation_months": [
+        6
+    ],
+    "test_months": [
+        7
+    ],
+    "review_rate": 0.1,
+    "primary_metric": "PR-AUC / Average Precision",
+    "tuning_sample_size": 150000,
+    "business_assumptions": {
+        "estimated_loss_per_fraud": 10000.0,
+        "manual_review_cost": 100.0,
+        "false_positive_cost": 250.0
+    },
+    "champion_model": "Logistic Regression",
+    "selected_threshold": 0.6579805761364765,
+    "champion_model_path": "C:\\Users\\Jhaine Lyka Villa\\Downloads\\Ed\\bank_fraud_local_anaconda_github_ready\\bank_fraud_local_anaconda_github_ready\\models\\champion_logistic_regression.joblib",
+    "champion_search_method": "GridSearchCV",
+    "champion_cv_pr_auc": 0.1377133091688337,
+    "champion_convergence_status": "Converged",
+    "champion_parameters": {
+        "C": 0.02,
+        "class_weight": "balanced",
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 1000,
+        "multi_class": "deprecated",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": 42,
+        "solver": "newton-cg",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+    },
+    "business_assumptions_are_illustrative": true
+}
