@@ -1,0 +1,6 @@
+age_group,income_group,employment_status,housing_status
+30-39,Higher income band,CA,BA
+20-29,Higher income band,CB,BA
+30-39,Lower income band,CF,BB
+20-29,Lower income band,CA,BB
+<20,Middle income band,CA,BE

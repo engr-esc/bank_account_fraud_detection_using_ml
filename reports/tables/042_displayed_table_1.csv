@@ -1,0 +1,5 @@
+model,search_method,total_parameter_combinations,candidates_evaluated,cv_folds,total_model_fits,best_cv_pr_auc,best_parameters,retry_performed,convergence_warning_count,maximum_iterations_used,configured_max_iter,convergence_status,tuning_seconds
+XGBoost,RandomizedSearchCV,2187,8,3,24,0.14010055349817066,"{'model__subsample': 0.7, 'model__reg_lambda': 10.0, 'model__n_estimators': 400, 'model__min_child_weight': 5, 'model__max_depth': 5, 'model__learning_rate': 0.05, 'model__colsample_bytree': 0.85}",False,0,,,Not applicable,348.41150164604187
+Logistic Regression,GridSearchCV,5,5,3,15,0.1377133091688337,{'model__C': 0.02},False,0,13.0,1000.0,Converged,232.11901545524597
+Random Forest,RandomizedSearchCV,144,8,3,24,0.12255136086296343,"{'model__n_estimators': 300, 'model__min_samples_leaf': 50, 'model__max_features': 'sqrt', 'model__max_depth': 16}",False,0,,,Not applicable,2659.7002172470093
+Decision Tree,RandomizedSearchCV,60,8,3,24,0.05735373419481634,"{'model__min_samples_leaf': 100, 'model__max_features': 'sqrt', 'model__max_depth': None}",False,0,,,Not applicable,295.1406764984131

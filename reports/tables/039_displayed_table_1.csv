@@ -1,0 +1,2 @@
+model,threshold,accuracy,pr_auc,roc_auc,precision,recall,f1_score,brier_score,true_positives,false_positives,true_negatives,false_negatives,false_positive_rate,false_negative_rate,predicted_positive_rate,review_rate,applications_reviewed,fraud_captured,total_fraud,recall_at_k,precision_at_k,lift_at_k
+Dummy Classifier,0.010253333333333333,0.013405073589231566,0.013405073589231566,0.5,0.013405073589231566,1.0,0.026455509131711945,0.013235311057939498,1450,106718,0,0,1.0,0.0,1.0,0.1,10817,136,1450,0.09379310344827586,0.01257280207081446,0.9379136926867989

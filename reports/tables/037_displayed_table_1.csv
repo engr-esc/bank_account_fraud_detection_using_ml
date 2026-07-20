@@ -1,0 +1,13 @@
+configuration,value
+random_seed,42
+target_column,fraud_bool
+time_column,month
+primary_dataset,Base.csv
+robustness_dataset,Variant II.csv
+training_months,"[0, 1, 2, 3, 4, 5]"
+validation_months,[6]
+test_months,[7]
+review_rate,0.1
+primary_metric,PR-AUC / Average Precision
+tuning_sample_size,150000
+business_assumptions,"{'estimated_loss_per_fraud': 10000.0, 'manual_review_cost': 100.0, 'false_positive_cost': 250.0}"

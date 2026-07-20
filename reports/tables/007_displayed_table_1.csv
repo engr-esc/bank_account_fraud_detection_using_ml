@@ -1,0 +1,5 @@
+dataset,class,class_label,count,percent
+Base,0,legitimate,988971,98.897
+Base,1,fraud,11029,1.103
+Variant II,0,legitimate,988971,98.897
+Variant II,1,fraud,11029,1.103

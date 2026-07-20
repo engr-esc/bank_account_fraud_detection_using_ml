@@ -1,0 +1,6 @@
+credit_risk_band,total_applications,fraud_count,fraud_rate,fraud_rate_percent
+very_high,200000,4899,0.024495,2.4495
+high,200000,2260,0.0113,1.13
+low,200000,1340,0.0067,0.67
+medium,200000,1305,0.006525,0.6525000000000001
+very_low,200000,1225,0.006125,0.6125

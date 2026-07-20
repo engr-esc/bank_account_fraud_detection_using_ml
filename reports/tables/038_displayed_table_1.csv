@@ -1,0 +1,5 @@
+dataset,rows,fraud_count,fraud_rate_percent
+Base training,794989,8151,1.0253
+Base validation,108168,1450,1.3405
+Base final test,96843,1428,1.4746
+Variant II robustness test,96842,1428,1.4746

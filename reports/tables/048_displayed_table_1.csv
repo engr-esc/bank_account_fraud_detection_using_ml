@@ -1,0 +1,3 @@
+dataset,metric,point_estimate,confidence_level,lower_bound,upper_bound,successful_bootstrap_samples
+Base month 7,PR-AUC / Average Precision,0.19842562736397,0.95,0.182171603342307,0.22029578365742467,200
+Variant II month 7,PR-AUC / Average Precision,0.201198591827657,0.95,0.18335823676608715,0.221275023364452,200

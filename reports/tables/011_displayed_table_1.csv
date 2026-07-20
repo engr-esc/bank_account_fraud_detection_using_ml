@@ -1,0 +1,33 @@
+variable,type,description,allowed_values_or_range,planned_use
+fraud_bool,Binary target,Indicates whether the application is fraudulent.,"0 = legitimate, 1 = fraud",Target variable
+income,Numerical / ordinal,Applicant income value represented in scaled or binned form.,0.1 to 0.9,Predictor; may also be used for fairness/proxy analysis
+name_email_similarity,Numerical,Similarity between applicant name and email address.,0 to 1,Identity consistency predictor
+prev_address_months_count,Numerical,Number of months associated with the previous address.,Integer; -1 may indicate unavailable/not applicable,Address history predictor; check sentinel values
+current_address_months_count,Numerical,Number of months associated with the current address.,Integer; -1 may indicate unavailable/not applicable,Address stability predictor
+customer_age,Numerical / ordinal,Applicant age or age group.,Values such as 10 to 90,Predictor and fairness analysis variable
+days_since_request,Numerical,Elapsed time since the application/request event.,Continuous numeric,Application timing predictor
+intended_balcon_amount,Numerical,Intended balance or account amount indicator.,Continuous numeric; may include negative values,Financial behavior predictor; check skew/outliers
+payment_type,Categorical,Payment or application payment category.,"AA, AB, AC, AD, AE",Categorical predictor; encode before modeling
+zip_count_4w,Numerical,Count of activity associated with zip code over four weeks.,Integer,Velocity or geographic activity predictor
+velocity_6h,Numerical,Activity velocity over six hours.,Continuous numeric,Short-term behavioral velocity predictor
+velocity_24h,Numerical,Activity velocity over twenty-four hours.,Continuous numeric,Daily behavioral velocity predictor
+velocity_4w,Numerical,Activity velocity over four weeks.,Continuous numeric,Medium-term behavioral velocity predictor
+bank_branch_count_8w,Numerical,Count of bank branch-related activity over eight weeks.,Integer,Behavioral/activity predictor
+date_of_birth_distinct_emails_4w,Numerical,Number of distinct emails associated with the same date of birth over four weeks.,Integer,Identity risk predictor
+employment_status,Categorical,Applicant employment status category.,"CA, CB, CC, CD, CE, CF, CG",Categorical predictor; possible fairness/proxy analysis
+credit_risk_score,Numerical,Credit risk score or creditworthiness indicator.,Integer; may include negative values,Credit-risk predictor
+email_is_free,Binary,Indicates whether the applicant email uses a free/public email domain.,"0 = no, 1 = yes",Identity/contact predictor
+housing_status,Categorical,Applicant housing status category.,"BA, BB, BC, BD, BE, BF, BG",Categorical predictor; possible fairness/proxy analysis
+phone_home_valid,Binary,Indicates whether the home phone is valid.,"0 = invalid, 1 = valid",Contact validity predictor
+phone_mobile_valid,Binary,Indicates whether the mobile phone is valid.,"0 = invalid, 1 = valid",Contact validity predictor
+bank_months_count,Numerical,Number of months associated with bank history.,Integer; -1 may indicate unavailable/not applicable,Banking history predictor; check sentinel values
+has_other_cards,Binary,Indicates whether the applicant has other cards.,"0 = no, 1 = yes",Financial profile predictor
+proposed_credit_limit,Numerical,Proposed credit limit for the application.,Numeric values such as 190 to 2100,Credit exposure predictor
+foreign_request,Binary,Indicates whether the request came from a foreign source/location.,"0 = no, 1 = yes",Request origin predictor
+source,Categorical,Application source or channel.,"INTERNET, TELEAPP",Channel predictor; encode before modeling
+session_length_in_minutes,Numerical,Length of the application session in minutes.,Continuous numeric; -1 may indicate unavailable/not applicable,Session behavior predictor
+device_os,Categorical,Operating system of the device used during application.,"linux, macintosh, other, windows, x11",Device predictor; encode before modeling
+keep_alive_session,Binary,Indicates whether the session was kept alive.,"0 = no, 1 = yes",Session behavior predictor
+device_distinct_emails_8w,Numerical,Number of distinct emails associated with the same device over eight weeks.,"-1, 0, 1, 2",Device identity risk predictor; check sentinel values
+device_fraud_count,Numerical,Prior fraud count associated with the device.,Integer; uploaded files show this may be constant,Assess for low variance; remove later if constant
+month,Time / ordinal,Month index used for temporal ordering.,0 to 7,"Time-based validation, drift review, and temporal split"

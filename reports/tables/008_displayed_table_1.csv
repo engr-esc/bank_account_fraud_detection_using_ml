@@ -1,0 +1,11 @@
+dataset,column,unique_values_count,unique_values
+Base,payment_type,5,"['AA', 'AB', 'AC', 'AD', 'AE']"
+Base,employment_status,7,"['CA', 'CB', 'CC', 'CD', 'CE', 'CF', 'CG']"
+Base,housing_status,7,"['BA', 'BB', 'BC', 'BD', 'BE', 'BF', 'BG']"
+Base,source,2,"['INTERNET', 'TELEAPP']"
+Base,device_os,5,"['linux', 'macintosh', 'other', 'windows', 'x11']"
+Variant II,payment_type,5,"['AA', 'AB', 'AC', 'AD', 'AE']"
+Variant II,employment_status,7,"['CA', 'CB', 'CC', 'CD', 'CE', 'CF', 'CG']"
+Variant II,housing_status,7,"['BA', 'BB', 'BC', 'BD', 'BE', 'BF', 'BG']"
+Variant II,source,2,"['INTERNET', 'TELEAPP']"
+Variant II,device_os,5,"['linux', 'macintosh', 'other', 'windows', 'x11']"

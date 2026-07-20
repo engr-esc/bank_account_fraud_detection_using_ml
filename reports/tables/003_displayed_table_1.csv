@@ -1,0 +1,3 @@
+dataset,rows,columns,fraud_count,fraud_rate_percent,legitimate_count,missing_cells,duplicate_rows,numeric_columns,categorical_columns,month_min,month_max,unique_months
+Base,1000000,32,11029,1.103,988971,0,0,27,5,0,7,8
+Variant II,1000000,32,11029,1.103,988971,0,0,27,5,0,7,8
